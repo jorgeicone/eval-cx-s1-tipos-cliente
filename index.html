@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Evaluación del Entrenamiento · Sesión 1 — Tipos de Cliente</title>
-<meta name="description" content="Cuéntanos cómo te fue en el entrenamiento de Sesión 1 — Tipos de Cliente. Tu opinión nos ayuda a mejorar y a inspirar a más emprendedores. Diplomado CX · Plaza Imperial.">
+<meta name="description" content="Cuéntanos cómo te fue en la Sesión 1 — Tipos de Cliente del Diplomado CX. Tu opinión nos ayuda a mejorar y a seguir creciendo juntos. Diplomado CX · Plaza Imperial.">
 <meta name="theme-color" content="#050d1f">
 <style>
 :root{
@@ -108,7 +108,7 @@ textarea{resize:vertical;min-height:96px;line-height:1.5}
   <div id="intro" class="card center">
     <span class="pill"><span class="dot"></span> Tu opinión cuenta</span>
     <h1>¿Cómo te fue en el <span class="grad">entrenamiento</span>?</h1>
-    <p class="lead">Cuéntanos tu experiencia con el entrenamiento de Sesión 1 — Tipos de Cliente. Son 15 preguntas rápidas: tu opinión nos ayuda a mejorar y a inspirar a más emprendedores como tú.</p>
+    <p class="lead">Cuéntanos tu experiencia con la Sesión 1 — Tipos de Cliente del Diplomado CX. Son 15 preguntas rápidas: tu opinión nos ayuda a mejorar y a ofrecer una mejor experiencia a los clientes de Plaza Imperial.</p>
     <div class="stats">
       <div class="stat"><b>15</b><span>Preguntas</span></div>
       <div class="stat"><b>~5</b><span>Minutos</span></div>
@@ -118,7 +118,7 @@ textarea{resize:vertical;min-height:96px;line-height:1.5}
       <label>¿Cómo te llamas? *</label>
       <input id="in-nombre" placeholder="Tu nombre y apellido" autocomplete="name">
       <label>Tu emprendimiento o idea de negocio (opcional)</label>
-      <input id="in-emp" placeholder="Nombre de tu negocio o idea">
+      <input id="in-emp" placeholder="Área o local donde trabajas en Plaza Imperial">
       <p class="hint">Usaremos tu nombre solo para el seguimiento del curso. Más adelante podrás decidir si autorizas publicar tu testimonio.</p>
     </div>
     <button class="btn full" id="start">Comenzar evaluación →</button>
@@ -184,29 +184,29 @@ const QS = [
   q:"¿Qué tan útil y valioso te pareció el contenido?",
   sub:"Las herramientas, los ejemplos y lo que aprendiste."},
  {cat:"La experiencia", type:"star", key:"r_organizacion",
-  q:"¿Cómo califican la organización, el ritmo y la duración?",
+  q:"¿Cómo calificas la organización, el ritmo y la duración?",
   sub:"Que todo fluyera bien y el tiempo estuviera bien aprovechado."},
  {cat:"La práctica", type:"star", key:"r_practica",
-  q:"Las demos en vivo y los ejercicios prácticos, ¿qué tal?",
-  sub:"Hacer las cosas en el momento, no solo verlas."},
- {cat:"Para tu negocio", type:"star", key:"r_aplicabilidad",
-  q:"¿Qué tan aplicable es lo aprendido a TU negocio o idea?",
-  sub:"Si puedes usarlo de verdad en tu emprendimiento."},
+  q:"¿Cómo calificas los casos reales y los role plays de la sesión?",
+  sub:"Los ejemplos prácticos con clientes reales de Plaza Imperial."},
+ {cat:"Para tu rol", type:"star", key:"r_aplicabilidad",
+  q:"¿Qué tan aplicable es lo aprendido a tu rol diario en el mall?",
+  sub:"Si puedes usarlo de verdad en tu área de trabajo."},
  {cat:"Expectativas", type:"star", key:"r_expectativas",
   q:"¿El entrenamiento cumplió lo que esperabas?",
   sub:"Comparado con lo que imaginabas antes de empezar."},
 
  // --- BLOQUE B: IMPACTO ---
- {cat:"Tu confianza con la IA", type:"star", key:"r_confianza",
-  q:"Después del curso, ¿qué tan seguro/a te sientes usando IA en tu negocio?",
-  sub:"Tu confianza HOY para ponerte a trabajar con estas herramientas."},
+ {cat:"Tu seguridad frente al cliente", type:"star", key:"r_confianza",
+  q:"Después de la sesión, ¿qué tan seguro/a te sientes identificando y atendiendo distintos tipos de cliente?",
+  sub:"Tu confianza HOY para aplicar esto con los clientes de hoy."},
  {cat:"Recomendación", type:"nps", key:"nps",
-  q:"¿Qué tan probable es que recomiendes este entrenamiento a otro emprendedor?",
+  q:"¿Qué tan probable es que recomiendes esta sesión a un colega o compañero de trabajo?",
   sub:"En una escala de 0 (nada probable) a 10 (totalmente seguro)."},
  {cat:"Tu avance", type:"single", key:"avance",
-  q:"¿Cuánto sientes que avanzó tu nivel de IA con el curso?",
+  q:"¿Cuánto sientes que mejoró tu comprensión sobre cómo atender a cada tipo de cliente?",
   sub:"Tu progreso real respecto a cómo llegaste.",
-  opts:["Nada, sigo igual","Un poco","Algo, ya manejo cosas nuevas","Mucho, di un salto","Muchísimo, cambió mi forma de trabajar"]},
+  opts:["Nada, sigo igual","Un poco","Algo, ya identifico patrones nuevos","Mucho, cambié mi forma de ver al cliente","Muchísimo, lo veo todo diferente"]},
  {cat:"Lo que te llevas", type:"multi", key:"llevas",
   q:"¿Qué te llevas montado y funcionando del curso?",
   sub:"Marca todo lo que aplica para ti.",
@@ -221,11 +221,11 @@ const QS = [
   sub:"Tu primer movimiento ahora que terminó el curso. (Opcional)"},
  {cat:"Tu testimonio", type:"text", key:"testimonio",
   q:"En tus palabras: ¿cómo describirías este entrenamiento y a Jorge como facilitador?",
-  sub:"Tu testimonio puede inspirar a otros emprendedores a dar el paso. (Opcional)"},
+  sub:"Tu testimonio puede inspirar a otros colaboradores a seguir creciendo. (Opcional)"},
  {cat:"Autorización", type:"single", key:"autoriza",
   q:"¿Nos autorizas a compartir tu testimonio?",
   sub:"Tú decides. Respetamos tu elección al 100%.",
-  opts:["Sí, con mi nombre y mi emprendimiento","Sí, solo con mi nombre","Sí, pero de forma anónima","No, prefiero que sea privado"]}
+  opts:["Sí, con mi nombre y mi área de trabajo","Sí, solo con mi nombre","Sí, pero de forma anónima","No, prefiero que sea privado"]}
 ];
 
 /* ====== ESTADO ====== */
@@ -392,7 +392,7 @@ function finish(){
   cards.forEach(([lab,val,col])=>{sm.innerHTML+=`<div class="sm"><b style="color:${col}">${val}</b><span>${lab}</span></div>`;});
 
   let msg = nps!==null && nps>=9
-    ? "¡Eso nos encanta! Si conoces a otro emprendedor que necesite este impulso, cuéntale. 🚀"
+    ? "¡Eso nos encanta! Si conoces a un colega que se beneficie de este conocimiento, cuéntale. 🚀"
     : "Gracias por tu honestidad: con esto hacemos que el próximo entrenamiento sea aún mejor.";
   if(autorizaLabel && autorizaLabel.startsWith("Sí")) msg += " Gracias por permitirnos compartir tu testimonio.";
   $("tyMsg").textContent=msg;
@@ -433,8 +433,4 @@ function saveToSupabase(resp, derived){
 
 /* STARS BG */
 (function(){const cv=$("stars");const ctx=cv.getContext("2d");let st=[];function rs(){cv.width=innerWidth;cv.height=innerHeight;st=[];const n=Math.min(90,innerWidth/14);for(let i=0;i<n;i++)st.push({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.4+.3,a:Math.random(),s:Math.random()*.02+.005});}
-function loop(){ctx.clearRect(0,0,cv.width,cv.height);st.forEach(p=>{p.a+=p.s;const al=.3+Math.abs(Math.sin(p.a))*.6;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);ctx.fillStyle=`rgba(0,212,255,${al*.5})`;ctx.fill();});requestAnimationFrame(loop);}
-addEventListener("resize",rs);rs();loop();})();
-</script>
-</body>
-</html>
+function loop(){ctx.clearRect(0,0,cv.width,cv.height);st.forEach(p=>{p.a+=p.s;const al=.3+Math.abs(Math.sin(p.a))*.6;ctx.beginPath();ctx.
