@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Evaluación del Entrenamiento · Sesión 1 — Tipos de Cliente</title>
-<meta name="description" content="Cuéntanos cómo te fue en la Sesión 1 — Tipos de Cliente del Diplomado CX. Tu opinión nos ayuda a mejorar y a seguir creciendo juntos. Diplomado CX · Plaza Imperial.">
+<meta name="description" content="Cuéntanos cómo te fue en el entrenamiento de Sesión 1 — Tipos de Cliente. Tu opinión nos ayuda a mejorar y a seguir creciendo juntos. Diplomado CX · Plaza Imperial.">
 <meta name="theme-color" content="#050d1f">
 <style>
 :root{
@@ -108,7 +108,7 @@ textarea{resize:vertical;min-height:96px;line-height:1.5}
   <div id="intro" class="card center">
     <span class="pill"><span class="dot"></span> Tu opinión cuenta</span>
     <h1>¿Cómo te fue en el <span class="grad">entrenamiento</span>?</h1>
-    <p class="lead">Cuéntanos tu experiencia con la Sesión 1 — Tipos de Cliente del Diplomado CX. Son 15 preguntas rápidas: tu opinión nos ayuda a mejorar y a ofrecer una mejor experiencia a los clientes de Plaza Imperial.</p>
+    <p class="lead">Cuéntanos tu experiencia con el entrenamiento de Sesión 1 — Tipos de Cliente. Son 15 preguntas rápidas: tu opinión nos ayuda a mejorar y a ofrecer una mejor experiencia a los clientes de Plaza Imperial.</p>
     <div class="stats">
       <div class="stat"><b>15</b><span>Preguntas</span></div>
       <div class="stat"><b>~5</b><span>Minutos</span></div>
@@ -210,7 +210,7 @@ const QS = [
  {cat:"Lo que te llevas", type:"multi", key:"llevas",
   q:"¿Qué te llevas montado y funcionando del curso?",
   sub:"Marca todo lo que aplica para ti.",
-  opts:["Mi mapa de tipos de cliente","Estrategia por perfil de cliente","Protocolo de atención personalizada","Cómo manejar clientes difíciles","Señales de alerta por tipo de cliente","Plan de comunicación adaptado"]},
+  opts:["Mi mapa de tipos de cliente", "Estrategia por perfil de cliente", "Protocolo de atención personalizada", "Cómo manejar clientes difíciles", "Señales de alerta por tipo de cliente", "Plan de comunicación adaptado"]},
 
  // --- BLOQUE C: CUALITATIVO / TESTIMONIO ---
  {cat:"Lo más valioso", type:"text", key:"valioso",
@@ -433,4 +433,8 @@ function saveToSupabase(resp, derived){
 
 /* STARS BG */
 (function(){const cv=$("stars");const ctx=cv.getContext("2d");let st=[];function rs(){cv.width=innerWidth;cv.height=innerHeight;st=[];const n=Math.min(90,innerWidth/14);for(let i=0;i<n;i++)st.push({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.4+.3,a:Math.random(),s:Math.random()*.02+.005});}
-function loop(){ctx.clearRect(0,0,cv.width,cv.height);st.forEach(p=>{p.a+=p.s;const al=.3+Math.abs(Math.sin(p.a))*.6;ctx.beginPath();ctx.
+function loop(){ctx.clearRect(0,0,cv.width,cv.height);st.forEach(p=>{p.a+=p.s;const al=.3+Math.abs(Math.sin(p.a))*.6;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);ctx.fillStyle=`rgba(0,212,255,${al*.5})`;ctx.fill();});requestAnimationFrame(loop);}
+addEventListener("resize",rs);rs();loop();})();
+</script>
+</body>
+</html>
